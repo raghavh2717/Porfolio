@@ -1066,9 +1066,12 @@ nav {
 }
 }
 
-@media(max-width:428px){
+@media(max-width:430px){
 	.contact-bnnr {
 	height: 376px;
+}
+	.scale-effect::before {
+	transform: scale(40);
 }
 header .col-5 {
 	text-align: left;
