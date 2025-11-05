@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <style>
+@keyframes growBar {
+  0% { height: 0; }
+  100% { height: 100px; }
+}
+@keyframes rotatePie {
+  0% { transform: rotate(0deg); transform-origin: 50% 50%; }
+  100% { transform: rotate(360deg); transform-origin: 50% 50%; }
+}
+@keyframes handWave {
+  0%, 100% { transform: rotate(0deg); transform-origin: top right; }
+  50% { transform: rotate(10deg); transform-origin: top right; }
+}
+.bar {
+  fill: #7c7cff;
+  animation: growBar 2s ease-in-out forwards;
+}
+.pie-slice {
+  fill: #7c7cff;
+  transform-origin: 300px 100px;
+  animation: rotatePie 4s linear infinite;
+}
+.hand {
+  fill: #000;
+  animation: handWave 2s ease-in-out infinite;
+}
+</style>
+  <rect x="100" y="200" width="20" height="50" class="bar"/>
+  <rect x="130" y="170" width="20" height="80" class="bar"/>
+  <rect x="160" y="180" width="20" height="70" class="bar"/>
+  <path d="M300,100 L340,100 A40,40 0 1,1 260,100 Z" class="pie-slice"/>
+  <rect x="250" y="160" width="10" height="30" class="hand"/>
+</svg>
