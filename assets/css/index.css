@@ -1070,7 +1070,7 @@ nav {
 	.contact-bnnr {
 	height: 376px;
 }
-	.scale-effect::before {
+	.full-scale .scale-effect::before {
 	transform: scale(40);
 }
 header .col-5 {
