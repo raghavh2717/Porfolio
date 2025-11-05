@@ -978,6 +978,9 @@ header p {
 	padding: 7px 20px;
 	max-width: 167px;
 }
+	.experience-box h2 span {
+	font-size: 14px;
+}
 .author-img {
 	max-width: 244px;
 }
